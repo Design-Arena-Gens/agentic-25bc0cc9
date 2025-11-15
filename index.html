@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Play ? Quick Game Guides</title>
+    <meta name="description" content="Search quick, clear instructions for how to play popular games: rules, setup, how to win, and tips." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand" aria-label="How to Play">How to Play</h1>
+        <div class="search">
+          <label for="search-input" class="sr-only">Search for a game</label>
+          <input id="search-input" class="search-input" type="search" placeholder="Search a game? e.g. Chess, Uno, Poker" autocomplete="off" />
+          <button id="random-btn" class="btn ghost" aria-label="Pick a random game">Random</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section aria-labelledby="popular-heading" class="popular">
+        <h2 id="popular-heading">Popular games</h2>
+        <div id="popular-list" class="chips" role="list"></div>
+      </section>
+
+      <section aria-labelledby="results-heading" class="results">
+        <h2 id="results-heading" class="sr-only">Results</h2>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>Made for quick, no?nonsense rules.</span>
+        <div class="footer-actions">
+          <button id="copy-link-btn" class="btn" aria-label="Copy shareable link">Copy link</button>
+          <a class="btn ghost" href="https://vercel.com" target="_blank" rel="noreferrer">Deploys on Vercel</a>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="/script.js"></script>
+  </body>
+</html>
